@@ -1,0 +1,476 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ********** Generales ********** */
+
+body{
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.title {
+    font: 10rem 'Stint Ultra Condensed';
+    text-transform: uppercase;
+    max-width: 90%;
+    text-align: center;
+    color: #FFF;
+    margin-bottom: 10rem;
+}
+
+
+.black {
+    color: #000;
+}
+
+.parrafos {
+    font: 1.25rem 'Roboto Condensed';
+    color: #FFF;
+    max-width: 90%;
+    padding-top: 1.25rem;
+}
+
+.btn {
+    font-size: 1.25rem;
+    padding: .625em;
+}
+
+.s-btn {
+    font-size: .875rem;
+    padding: .125rem .375rem;
+}
+
+.btn,
+.s-btn {
+    text-decoration: none;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: .375rem;
+}
+
+.btn:hover,
+.s-btn:hover {
+    color: #1883ba;
+    background-color: #ffffff;
+}
+
+
+
+/* ********** Header ********** */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1883ba;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 13.75rem;
+}
+
+#header-img {
+    height: 6.25rem;
+    margin-top: .625rem;
+}
+
+.nav-bar {
+    list-style: none;
+    text-transform: uppercase;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.nav-bar .nav-link {
+    text-decoration: none;
+    letter-spacing: .187rem;
+    display: block;
+    padding: 1em 1em 0.5em 1em;
+    color: #FFF;
+    font-size: 2.5rem;
+}
+
+.nav-bar .nav-link:hover {
+    background-color: #00ace6;
+}
+
+
+/* ********** Main ********** */
+#main {
+    height: 100vh;
+    background: url(../img/principal1920x1000.jpg) no-repeat center top;
+    background-size: cover;
+}
+
+#main .parrafos {
+    display: none;
+}
+
+#main #form {
+    text-align: center;
+    min-width: 70vw;
+}
+
+#main #form #email {
+    display: block;
+    width: 100%;
+    height: px;
+    margin: 1.25rem;
+    border-radius: .625rem;
+}
+
+
+.field{
+    height: 6.25rem;
+    margin-bottom: 2.8125rem;
+    padding-left: 0px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #FFF #FFF #bbbbbb;
+    font-family: 'Palatino Linotype','Book Antiqua','Palatino',serif;
+    font-size: 3.125rem;
+}
+
+.w-input{
+    display: block;
+    width: 100%;
+    padding: 8px 12px;
+    line-height: 1.42;
+    color: #333333;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #cccccc;
+}
+
+.button{
+    padding: 1.5625rem 1.5625rem;
+    background-color: #1883ba;
+    /* transition: background-color 400ms ease,box-shadow 400ms ease,color 400ms ease; */
+    font-size: 5rem;
+    margin-top: 9.375rem;
+    font-weight: 600;
+    border-radius: .375rem;
+}
+
+.w-button{
+    display: inline-block;
+    color: #FFF;
+    border: 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ********** Destacados ********** */
+
+#destacados {
+    padding-top: 3.75rem;
+}
+
+/* ********** CARD ********** */
+#tours {
+    margin: 0 auto;
+    /* max-width: 1300px; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card {
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 50px;
+    width: 90%;
+    box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.5);
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+        "photo photo"
+        "transport price-title"
+        "destination price"
+        "clarification1 clarification2"
+        ". more";
+}
+
+.card .photo {
+    grid-area: photo;
+}
+
+.card .transport {
+    grid-area: transport;
+}
+
+.card .price-title {
+    grid-area: price-title;
+}
+
+.card .destination {
+    grid-area: destination;
+}
+
+.card .price {
+    grid-area: price;
+}
+
+.card .clarification1 {
+    grid-area: clarification1;
+}
+
+.card .clarification2 {
+    grid-area: clarification2;
+}
+
+.card .more {
+    grid-area: more;
+}
+
+.card .ofert1 {
+    background: url(../img/new_york.jpg) no-repeat center left;
+}
+
+.card .ofert2 {
+    background: url(../img/san_pablo.jpg) no-repeat center left;
+}
+
+.card .ofert3 {
+    background: url(../img/orlando.jpg) no-repeat center left;
+}
+
+.card .ofert4 {
+    background: url(../img/mendoza.jpg) no-repeat center left;
+}
+
+
+.card .photo {
+    min-height: 450px;
+    max-height: 450px;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+.card .transport,
+.card .price-title,
+.card .clarification1,
+.card .clarification2 {
+    font-size: .75rem;
+}
+
+.card .clarification1 {
+    color: gray;
+    font-weight: 200;
+}
+
+.card .transport,
+.card .destination,
+.card .clarification1 {
+    padding-left: 10px;
+}
+
+.card .price-title,
+.card .price,
+.card .clarification2,
+.card .more {
+    padding-right: 10px;
+    text-align: right;
+}
+
+.card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: darkred;
+}
+
+.card .more {
+    font-size: .875rem;
+    color: blueviolet;
+}
+
+#video {
+    display: none;
+}
+
+
+/* ********** Nosotros ********** */
+#nosotros {
+    margin-top: 10vh;
+    background: url(../img/principal1920x1000.jpg) no-repeat center bottom;
+    background-size: cover;
+    padding: 30px 0;
+}
+
+#nosotros .title {
+    max-width: 80%;
+    font-size: 9.375rem;
+    margin-top: 9.375rem;
+}
+
+#nosotros .btn {
+    margin: 4.375rem;
+}
+
+/* ********** Footer ********** */
+#footer {
+    background-color: #1883ba;
+    /* margin-top: 60px; */
+    padding: 20px 0;
+    color: #FFF;
+    font-size: 2.5rem;
+}
+
+.footer-redes-container {
+    padding: 10px;
+    text-align-last: center
+}
+
+.footer-redes-container a {
+    text-decoration: none;
+    color: #FFF;
+    padding: 0 5px;
+}
+
+.footer-redes-container a:hover {
+    text-decoration: underline;
+}
+
+.footer-derechos-container {
+    text-align: center;
+}
+
+.footer-derechos-container span {
+    font-weight: 800;
+}
+
+.footer-gracias-container {
+    display: none;
+}
+
+
+/*
+    RESPONSIVE
+    ========================================================================= /
+*/
+
+
+/*
+    Móviles en horizontal o tablets en vertical
+    ------------------------------------------------------------------------- /
+*/
+@media (min-width: 800px){
+    html{
+        font-size: 8px;
+    }
+    /* #header {
+        height: 10vh;
+        flex-direction: row;
+    }
+
+    .nav-bar {
+        justify-content: flex-end;
+    }
+
+    #header-img {
+        margin: 0;
+        margin-left: .625rem;
+
+    }
+
+    #main {
+        margin-top: 10vh;
+        height: 90vh;
+    }
+
+    #main .parrafos {
+        display: inherit;
+
+    }
+
+    #main #form {
+        margin-top: 3.125rem;
+    }
+
+    .card {
+        width: 45%;
+    }
+
+    #video {
+        display: inherit;
+        grid-area: photo;
+        height: 100%;
+
+    }
+
+    #foto {
+        display: none;
+    }
+
+    #nosotros .parrafos {
+        display: inherit;
+    }
+
+    /* ********** Footer ********** */
+    /* #footer {
+        background-color: #1883ba;
+        margin-top: 60px;
+        padding: 5px 20px;
+        color: #FFF;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 10px;
+    }
+
+    .footer-mail {}
+
+    .footer-redes-container {
+        padding: 10px;
+        text-align-last: center;
+    }
+
+    .redes-icon-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .footer-derechos-container {
+        text-align: center;
+    }
+
+    .footer-derechos-container p:last-child {
+        margin-top: 10px;
+    }
+
+    .footer-gracias-container {
+        display: inherit;
+        text-align: center;
+        padding: 0 30px;
+        font-size: 25px;
+    }
+} */
+
+/*
+    Tablets en horizonal y escritorios normales
+    ------------------------------------------------------------------------- /
+*/
+@media (min-width: 1024px) {
+ 
+}
+
+
+/*
+    Escritorios muy anchos
+    ------------------------------------------------------------------------- */
+*/ @media (min-width: 1200px) {} */
